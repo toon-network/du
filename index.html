@@ -1,1 +1,21 @@
-<iframe src="https://www.yourupload.com/embed/O3hadV2e2W80" allowfullscreen="true" style="border: 0" />
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id = "output">
+		</div>
+		<script type = "text/javascript"> 
+			let base_url = "https://www.yourupload.com/embed/";
+			var episodios = [
+				"ypau4Ow1YmXx",
+				"K1V58GlAwjlC",
+				"8Qt8u3X8u0rs",
+			];
+			for(let i = 0; i < episodios.length; i++) {
+				p = document.createElement("p");
+				p.innerHTML = '<iframe width="560" height="315" src="'+base_url+episodios[i]+'" allow="autoplay" allowfullscreen=""></iframe>"';
+				document.getElementById("output").appendChild(p);
+				console.dir(p.innetHTML);
+			}
+		</script>
+	</body>
+</html>
